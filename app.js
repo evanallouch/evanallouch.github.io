@@ -298,7 +298,7 @@ const films = [
     "altEn": "A young man looking away in a dimly lit interior",
     "altFr": "Un jeune homme détourne le regard dans un intérieur sombre",
     "captions": {
-      "main": "french_auto"
+      "main": "english"
     },
     "images": [
       {
