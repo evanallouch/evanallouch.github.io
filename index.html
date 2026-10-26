@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Evan Allouch — French filmmaker, writer, director and editor. Selected films and projects. Available for a 22–26-week U.S. internship from May 4, 2027.">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#f3f1e9">
+  <title>Evan Allouch — Film Portfolio</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#work" data-i18n="skip">Skip to selected films</a>
+  <header class="site-header">
+    <a href="#top" class="brand" aria-label="Evan Allouch, home">EVAN ALLOUCH<span class="brand-dot"></span></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#work" data-i18n="navWork">Selected films</a>
+      <a href="#profile" data-i18n="navProfile">Profile</a>
+      <a href="#projects" data-i18n="navProjects">Projects</a>
+      <a href="#contact" data-i18n="navContact">Contact <span aria-hidden="true">↗</span></a>
+    </nav>
+    <div class="header-actions">
+      <div class="language-switch" role="group" aria-label="Language"><button type="button" data-lang="en" aria-pressed="true">EN</button><span>/</span><button type="button" data-lang="fr" aria-pressed="false">FR</button></div>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation"><span></span><span></span></button>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden>
+      <a href="#work" data-i18n="navWork">Selected films</a><a href="#profile" data-i18n="navProfile">Profile</a><a href="#projects" data-i18n="navProjects">Projects</a><a href="#contact" data-i18n="navContact">Contact ↗</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="short-line"></span><span data-i18n="heroEyebrow">Independent filmmaker · Paris, France</span></p>
+        <h1 id="hero-title">EVAN<br>ALLOUCH<span class="hero-serif" data-i18n="heroSerif">A sense of cinema.</span></h1>
+        <p class="hero-roles" data-i18n="roles">Writer / Director / Editor</p>
+        <p class="hero-description" data-i18n="heroDescription">Narrative films and sensory experiments. Exploring time, memory, and what passes between people.</p>
+        <div class="hero-buttons"><a class="button button-dark" href="#work"><span data-i18n="explore">Explore selected films</span><span aria-hidden="true">↓</span></a><a class="text-link resume-link" href="assets/Evan_Allouch_Resume_US_2027.pdf" download data-i18n="resume">U.S. résumé ↗</a></div>
+      </div>
+      <div class="hero-visual">
+        <button class="hero-image-button" type="button" data-film="nomade" aria-label="Watch Nomade, 5 minutes 41 seconds">
+          <img src="assets/nomade-0.webp" width="1500" height="840" alt="Two young men sitting on a climbing rock in a sunlit park — Nomade" fetchpriority="high">
+          <span class="frame-label" data-i18n="heroFrame">A frame from Nomade</span>
+          <span class="play-circle" aria-hidden="true">▶</span>
+          <span class="hero-image-caption"><span><strong>NOMADE</strong><small data-i18n="heroFilmCaption">Narrative short · 2025</small></span><span class="watch-duration">5:41 <span aria-hidden="true">↗</span></span></span>
+        </button>
+        <div class="image-footnote"><span>01 / 03</span><span data-i18n="heroFootnote">Small gestures. Shared silences. Unexpected connections.</span></div>
+      </div>
+    </section>
+
+    <div class="availability-bar wrap"><span class="availability-title"><i aria-hidden="true"></i><span data-i18n="available">Available May 4, 2027</span></span><span data-i18n="internship">22–26-week U.S. internship</span><span data-i18n="production">Production / Post-production</span><a href="#contact" data-i18n="getInTouch">Get in touch ↗</a></div>
+
+    <section id="work" class="work-section" aria-labelledby="work-title">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="eyebrow" data-i18n="workEyebrow">01 / The work</p><h2 id="work-title" data-i18n="workTitle">Selected <em>films.</em></h2></div><p class="section-intro" data-i18n="workIntro">Three ways into my work.<br>Choose a film to watch and explore.</p></div>
+        <div class="work-toolbar"><div class="filters" role="group" aria-label="Filter films"><button data-filter="all" aria-pressed="true"><span data-i18n="all">All work</span><sup>03</sup></button><button data-filter="narrative" aria-pressed="false"><span data-i18n="narrative">Narrative</span><sup>02</sup></button><button data-filter="experimental" aria-pressed="false"><span data-i18n="experimental">Experimental</span><sup>01</sup></button></div><span class="toolbar-note" data-i18n="workRole">Writer / director / editor on all films</span></div>
+        <div id="film-grid" class="film-grid"></div>
+        <p id="filter-status" class="sr-only" aria-live="polite"></p>
+        <div class="work-bottom"><span data-i18n="workNote">Original French titles. Films open in the screening room or directly on YouTube.</span><a class="text-link portfolio-link" href="assets/Evan_Allouch_Portfolio_US_2027.pdf" download data-i18n="downloadPortfolio">Download film portfolio (PDF) ↗</a></div>
+      </div>
+    </section>
+
+    <section id="profile" class="profile-section wrap" aria-labelledby="profile-title">
+      <div class="profile-lead"><p class="eyebrow" data-i18n="profileEyebrow">02 / Profile</p><h2 id="profile-title" data-i18n="profileTitle">An eye for detail.<br><em>A hands-on approach.</em></h2><p class="profile-intro" data-i18n="profileIntro">I'm a French filmmaker and final-year Computer Engineering student on the AI track at CY Tech. I write, direct, and edit independent narrative and experimental shorts.</p><p class="profile-body" data-i18n="profileBody">My films begin with people and their surroundings: a repeated gesture, something left unsaid, a changing landscape. Alongside filmmaking, I bring experience in software, data, and reproducible technical workflows.</p><a class="button button-outline resume-link" href="assets/Evan_Allouch_Resume_US_2027.pdf" download><span data-i18n="downloadResume">Download U.S. résumé</span><span aria-hidden="true">↓</span></a></div>
+      <div class="profile-facts">
+        <div class="fact-group"><h3 data-i18n="filmSkills">Film & post-production</h3><p data-i18n="filmSkillsText">DaVinci Resolve · Editing · Camera operation · Basic sound recording · Small-crew shoots</p></div>
+        <div class="fact-group"><h3 data-i18n="technicalSkills">Technical toolkit</h3><p>Python · SQL / SQLite · Git · PyTorch / Transformers · Streamlit</p></div>
+        <div class="fact-group"><h3 data-i18n="languages">Languages</h3><p data-i18n="languagesText">French — native<br>English — advanced</p></div>
+        <div class="experience"><p class="eyebrow" data-i18n="experience">Experience & education</p><div><span>2026</span><p><strong>Express Café</strong><small data-i18n="express">Data / Software Intern · May–August</small></p></div><div><span>2025</span><p><strong>Tiime, Paris</strong><small data-i18n="tiime">Machine Learning Intern · June–August</small></p></div><div><span>2027</span><p><strong>CY Tech</strong><small data-i18n="education">Computer Engineering / AI · Expected graduation</small></p></div></div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-section" aria-labelledby="projects-title"><div class="wrap">
+      <div class="section-heading"><div><p class="eyebrow" data-i18n="projectsEyebrow">03 / In the making</p><h2 id="projects-title" data-i18n="projectsTitle">Ongoing <em>projects.</em></h2></div><p class="section-intro" data-i18n="projectsIntro">Experiments in sensation.<br>Observations over time.</p></div>
+      <div class="project-grid single-project">
+        <article class="project-card"><div class="project-image"><img src="assets/echos-1.webp" width="725" height="410" alt="A teddy bear inside a blue geometric boundary — Échos du passé" loading="lazy"><span class="status" data-i18n="inProgress">In progress</span></div><div class="project-copy"><p class="eyebrow" data-i18n="experimentalSeries">Experimental short-film series</p><h3>Échos du passé</h3><p data-i18n="echosProject">Traces of the past return through the senses. Gestures, light, steam, and physical materials meet repetition and geometric boundaries.</p><div class="project-status"><span class="chapter-marks" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><span data-i18n="chapters">4 chapters filmed · Goût in development</span></div><dl class="project-facts"><div><dt data-i18n="role">Role</dt><dd data-i18n="roles">Writer / Director / Editor</dd></div><div><dt data-i18n="duration">Duration</dt><dd data-i18n="runtimePending">To be confirmed · Series in progress</dd></div></dl><button class="text-link" type="button" data-film="echos" data-i18n="exploreChapters">Explore the chapters ↗</button></div></article>
+
+      </div>
+    </div></section>
+
+    <section id="contact" class="contact-section wrap" aria-labelledby="contact-title"><div><p class="eyebrow" data-i18n="contactEyebrow">04 / Let's connect</p><h2 id="contact-title" data-i18n="contactTitle">Let's make<br><em>something happen.</em></h2><p data-i18n="contactIntro">Seeking a practical role in film production, post-production, or technical media workflows in the United States.</p><div class="contact-availability"><span class="tiny-dot" aria-hidden="true"></span><span data-i18n="contactAvailability">From May 4, 2027 · 22–26 weeks</span></div></div><div class="contact-actions"><a class="email-link" href="mailto:evanallouch@gmail.com?subject=U.S.%20Film%20Internship%20%E2%80%94%20May%202027">evanallouch@gmail.com <span aria-hidden="true">↗</span></a><button type="button" id="copy-email" class="text-link" data-i18n="copyEmail">Copy email address</button><p class="copy-status" id="copy-status" role="status"></p><div class="contact-downloads"><a class="resume-link" href="assets/Evan_Allouch_Resume_US_2027.pdf" download data-i18n="resumePdf">U.S. résumé <span>PDF ↓</span></a><a class="portfolio-link" href="assets/Evan_Allouch_Portfolio_US_2027.pdf" download data-i18n="portfolioPdf">Film portfolio <span>PDF ↓</span></a></div><p class="contact-location" data-i18n="contactLocation">Based in Paris, France · French / English</p></div></section>
+  </main>
+
+  <footer class="site-footer wrap"><a class="brand" href="#top">EVAN ALLOUCH<span class="brand-dot"></span></a><span data-i18n="footer">Film portfolio / 2027</span><a href="#top" data-i18n="backTop">Back to top ↑</a></footer>
+
+  <dialog id="film-dialog" aria-labelledby="dialog-title"><div class="dialog-top"><span class="eyebrow" data-i18n="screeningRoom">Screening room</span><button type="button" class="close-dialog" aria-label="Close film">×</button></div><div id="dialog-content"></div></dialog>
+</body>
+</html>
