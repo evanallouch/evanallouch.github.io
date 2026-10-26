@@ -446,7 +446,7 @@ function renderDialog() {
   const selectedVideo = currentChapter === 'preview' && film.preview ? film.preview : film.video;
   const versionLabel = film.preview ? t(currentChapter === 'preview' ? 'chapterOther' : 'chapterOne') : film.title;
   const captionStatus = (film.captions && film.captions[currentChapter]) || 'unverified';
-  const captionText = captionStatus === 'english' ? t('captionEnglish') : captionStatus === 'french_auto' ? t('captionFrenchAuto') : captionStatus === 'none' ? t('captionNone') : t('captionUnverified');
+  const captionText = captionStatus === 'english' ? t('captionEnglish') : '';
   document.getElementById('dialog-external').href = 'https://www.youtube.com/watch?v=' + selectedVideo;
   document.getElementById('dialog-external').setAttribute('aria-label', t('openYouTube') + ' — ' + film.title + (film.preview ? ' — ' + versionLabel : ''));
   document.getElementById('dialog-content').innerHTML = [
@@ -457,7 +457,7 @@ function renderDialog() {
     film.preview ? '<div class="chapter-tabs" role="group" aria-label="' + t('viewChapters') + '"><button type="button" data-chapter="main" aria-pressed="' + (currentChapter === 'main') + '">' + t('chapterOne') + '</button><button type="button" data-chapter="preview" aria-pressed="' + (currentChapter === 'preview') + '">' + t('chapterOther') + '</button></div>' : '',
     '<p class="dialog-role-label">' + t('roles') + '</p><p class="dialog-description">' + film[language] + '</p>',
     film.preview ? '<p class="dialog-note">' + t('chapterNote') + '</p>' : '',
-    '<p class="dialog-note caption-status">' + captionText + '</p><p class="dialog-note">' + t('playerNote') + '</p>',
+    (captionText ? '<p class="dialog-note caption-status">' + captionText + '</p>' : '') + '<p class="dialog-note">' + t('playerNote') + '</p>',
     '<div class="film-stills" role="group" aria-label="' + t('stills') + '"><img src="assets/' + film.image + '-1.webp" width="' + film.images[1].width + '" height="' + film.images[1].height + '" alt="' + film.title + ' — ' + t('still') + ' 1" loading="lazy" decoding="async"><img src="assets/' + film.image + '-2.webp" width="' + film.images[2].width + '" height="' + film.images[2].height + '" alt="' + film.title + ' — ' + t('still') + ' 2" loading="lazy" decoding="async"></div>',
     '<div class="dialog-bottom"><button type="button" data-next-film="' + films[(index + films.length - 1) % films.length].id + '">' + t('prevFilm') + '</button><span>0' + (index + 1) + ' / 03</span><button type="button" data-next-film="' + films[(index + 1) % films.length].id + '">' + t('nextFilm') + '</button></div></div>'
   ].join('');
@@ -536,7 +536,7 @@ document.addEventListener('click', event => {
     if (!allowedVideos.includes(load.dataset.loadVideo)) return;
     const frame = document.createElement('iframe');
     const status = film.captions && film.captions[currentChapter];
-    frame.src = 'https://www.youtube-nocookie.com/embed/' + load.dataset.loadVideo + '?autoplay=1&rel=0&playsinline=1&hl=' + language + (status === 'english' ? '&cc_load_policy=1&cc_lang_pref=en' : '');
+    frame.src = 'https://www.youtube-nocookie.com/embed/' + load.dataset.loadVideo + '?autoplay=1&rel=0&playsinline=1&hl=' + language + (status === 'english' || film.id === 'nomade' ? '&cc_load_policy=1&cc_lang_pref=en' : '');
     frame.title = film.title + ' — ' + t('screeningRoom');
     frame.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share';
     frame.allowFullscreen = true;
