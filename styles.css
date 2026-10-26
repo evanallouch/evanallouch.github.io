@@ -29,3 +29,97 @@ dialog{border:0;background:var(--paper);color:var(--ink);padding:0;width:min(102
 .dialog-role-label,.dialog-meta,.dialog-note{font-size:11px}.dialog-description{font-size:14px}.close-dialog{min-width:44px;min-height:44px}.dialog-bottom>button,.chapter-tabs button{min-height:44px;font-size:12px}.external-watch{min-height:44px}
 .contact-downloads a{font-size:13px}.contact-actions>.text-link{min-height:44px;font-size:12px}
 @media(max-width:760px){.single-project .project-card{display:block}.single-project .project-image img{aspect-ratio:1.78}.single-project .project-copy{padding-top:22px}.menu-toggle{width:34px;min-height:44px}.mobile-nav a{min-height:44px;display:flex;align-items:center}.hero-description,.film-synopsis,.project-copy>p:not(.eyebrow),.profile-body{font-size:14px}.filters button{font-size:11px}.film-meta,.film-role{font-size:11px}.section-heading .section-intro{font-size:11px}.availability-bar{font-size:10px}.chapter-tabs button{font-size:11px}.dialog-bottom>button{font-size:11px}.dialog-description{font-size:14px}}
+
+/* Readability, progressive enhancement and touch targets. */
+[hidden]{display:none!important}
+.hero-availability{font-size:13px;line-height:1.7;margin-top:15px;color:var(--accent);font-weight:600;max-width:420px}
+.language-switch a{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;color:var(--muted);font-size:12px}
+.language-switch a[aria-current=page]{color:var(--ink);font-weight:700}
+.language-switch{gap:0}
+.desktop-nav a,.site-footer a,.resume-link,.portfolio-link{min-height:44px;align-content:center}
+.eyebrow{font-size:11px}
+.hero-roles{font-size:12px;line-height:1.7}
+.hero-description,.profile-body,.film-synopsis,.project-copy>p:not(.eyebrow),.contact-section>div>p:not(.eyebrow){font-size:14px}
+.hero-image-caption small,.frame-label,.watch-duration,.image-footnote,.image-footnote>span:last-child{font-size:11px}
+.image-footnote{align-items:flex-start;gap:18px;line-height:1.7}
+.image-footnote>span:first-child{flex-shrink:0}
+.frame-label{background:rgba(18,22,17,.76);padding:4px 8px;line-height:1.5;max-width:calc(100% - 40px)}
+.film-number{background:rgba(18,22,17,.76);padding:3px 7px;font-size:11px;line-height:1.5}
+.film-meta,.film-role,.toolbar-note,.duration-chip{font-size:12px}
+.film-meta{flex-wrap:wrap;gap:6px 18px;line-height:1.65}
+.film-details-link{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;font-size:24px}
+.film-actions{flex-wrap:wrap;gap:5px 22px}
+.film-actions .text-link{font-size:12px;line-height:1.6;min-height:44px;max-width:100%}
+.film-actions .text-link span{padding-left:7px;flex-shrink:0}
+.film-card.wide .film-actions{flex-direction:column;align-items:flex-start;gap:4px}
+.film-progress{font-size:12px;line-height:1.75;color:#b9bfaf;margin-top:12px;max-width:440px}
+.work-bottom,.work-bottom a{font-size:12px;line-height:1.8}
+.fact-group h3{font-size:12px}.fact-group p,.experience small{font-size:13px}
+.availability-bar{font-size:12px;line-height:1.75;flex-wrap:wrap;padding-top:15px;padding-bottom:15px}
+.documentary-project{display:grid;grid-template-columns:1.12fr 1fr;gap:6%;align-items:center}
+.project-gallery{min-width:0}.project-main-image{width:100%;height:auto;object-fit:contain}
+.project-stills{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px;align-items:start}
+.project-stills img{width:100%;height:auto;object-fit:contain}
+.documentary-project .project-copy{padding:0;min-width:0}
+.project-copy .project-dates{font-size:12px!important;color:var(--muted);margin:21px 0 17px}
+.project-facts{font-size:13px}
+.documentary-status{display:flex;align-items:flex-start;gap:10px;font-size:13px!important;line-height:1.8;margin-top:18px}
+.documentary-status .tiny-dot{margin-top:9px}
+.section-intro{font-size:14px;line-height:1.75;max-width:300px}
+.contact-availability,.contact-location{font-size:12px!important;line-height:1.8}
+.site-footer{font-size:11px}
+.noscript-nav{display:flex;flex-wrap:wrap;gap:15px;padding-block:14px;font-size:13px}
+.noscript-nav a{min-height:44px;align-content:center;text-decoration:underline;text-underline-offset:4px}
+.dialog-top{gap:14px;padding:10px 20px}
+.dialog-top>.eyebrow{margin-right:auto}
+.dialog-top .external-watch{font-size:12px;line-height:1.6;min-height:44px;align-items:center}
+.close-dialog{flex-shrink:0;min-width:44px;min-height:44px}
+.dialog-meta,.dialog-note,.dialog-role-label{font-size:12px;line-height:1.8}
+.dialog-description{font-size:14px;line-height:1.85}
+.chapter-tabs{gap:9px}
+.chapter-tabs button{flex:1 1 250px;max-width:100%;min-height:44px;font-size:12px;line-height:1.6;text-align:left;white-space:normal}
+.dialog-bottom{align-items:center}.dialog-bottom>button{font-size:12px;min-height:44px}
+.film-stills{align-items:start}
+.film-stills img{aspect-ratio:auto;height:auto;object-fit:contain}
+.caption-status{color:var(--ink)}
+@media(max-width:1100px){.hero-copy>.eyebrow{font-size:10px}.hero-description{font-size:14px}.image-footnote>span:last-child{font-size:11px}.toolbar-note{max-width:220px}}
+@media(max-width:760px){
+  .header-actions{gap:12px}.menu-toggle{width:44px;min-height:44px}
+  .hero-roles{font-size:12px}.hero-copy>.eyebrow{font-size:10px}
+  .hero-description,.profile-body,.film-synopsis{font-size:14px}
+  .hero-buttons{gap:16px 24px}
+  .hero-buttons>.text-link{font-size:12px}
+  .hero-availability{font-size:13px;max-width:100%}
+  .frame-label,.hero-image-caption small,.watch-duration{font-size:11px}
+  .image-footnote,.image-footnote>span:last-child{font-size:11px}
+  .availability-bar{display:flex;flex-wrap:wrap;gap:8px 20px;padding-block:18px}
+  .availability-bar .availability-title{width:100%;font-size:12px}
+  .availability-bar>span:nth-child(2),.availability-bar>span:nth-child(3){font-size:11px;text-align:left}
+  .availability-bar>a{font-size:12px;margin-left:auto}
+  .filters{flex-wrap:wrap;gap:7px}.filters button{font-size:12px;min-height:44px;padding-inline:11px}.filters sup{font-size:9px;margin-left:8px}
+  .film-meta,.film-role,.duration-chip{font-size:12px}
+  .film-actions .text-link{font-size:12px;min-height:44px}
+  .film-card.wide .film-actions{gap:4px}
+  .work-bottom,.work-bottom a{font-size:12px}
+  .fact-group h3{font-size:12px}.fact-group p,.experience small{font-size:13px}
+  .documentary-project{grid-template-columns:1fr;gap:28px}
+  .project-copy>.eyebrow{font-size:11px}.project-copy>p:not(.eyebrow){font-size:14px}
+  .project-facts{font-size:13px}
+  .contact-section>div>p:not(.eyebrow){font-size:14px}
+  .contact-actions>.text-link{font-size:12px}
+  .contact-downloads a{font-size:13px}
+  .site-footer{font-size:11px}
+  .dialog-description{font-size:14px}
+  .dialog-meta,.dialog-note,.dialog-role-label{font-size:12px}
+  .dialog-bottom>button{font-size:12px}
+}
+@media(max-width:600px){
+  .section-heading{display:block}
+  .section-heading .section-intro{display:block;max-width:none;padding:0;margin-top:14px;font-size:13px;line-height:1.75}
+  .dialog-top{padding:8px 12px;gap:12px}
+  .dialog-top>.eyebrow{display:none}
+  .dialog-top .external-watch{margin-right:auto;font-size:12px}
+  .dialog-info{padding:19px 17px 23px}
+  .chapter-tabs button{font-size:12px;flex-basis:100%}
+  .dialog-bottom{gap:8px}.dialog-bottom>span{font-size:11px;white-space:nowrap}
+}
